@@ -54,6 +54,7 @@
   <project path="hardware/libhardware" name="sagit-10-temp/android_hardware_libhardware" groups="pdk" revision="lineage-17.0" />
 
   <project path="hardware/qcom/bt-caf" name="sagit-10-temp/android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-16.0-caf" />
+  <project path="hardware/qcom/thermal" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,pdk-qcom" revision="lineage-16.0" />
 
   <project path="hardware/qcom/audio-caf/msm8998" name="sagit-10-temp/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-8998" />
   <project path="hardware/qcom/display-caf/msm8998" name="sagit-10-temp/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8998" />
