@@ -38,7 +38,6 @@
   <project path="hardware/qcom/power" name="LineageOS/android_hardware_qcom_power" groups="qcom,pdk-qcom" revision="lineage-16.0" />
   <project path="hardware/ril-caf" name="LineageOS/android_hardware_ril" groups="qcom,pdk-qcom" revision="lineage-16.0-caf" />
 
-  <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="lineage-16.0" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" revision="lineage-16.0" />
   <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="lineage-16.0" />
   <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="lineage-16.0" />
