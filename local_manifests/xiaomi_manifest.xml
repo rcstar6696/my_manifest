@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Please do not manually edit this file-->
+<manifest>
+   <remote  name="lineageos"
+           fetch="https://github.com/LineageOS/"/>
+
+   <remote  name="sdm660"
+           fetch="ssh://git@github.com/xiaomi-sdm660/"/>
+
+  <remote  name="rcstar6696"
+           fetch="ssh://git@github.com/rcstar6696/"/>
+
+  <remote  name="why"
+            fetch="ssh://git@github.com/WhyProject/"/>
+
+
+<!-- BUILD MANIFEST -->
+	<project name="android_build_scripts" path="build/scripts" remote="sdm660" revision="havoc" >
+	<linkfile src="buildxiaomi.sh" dest="buildxiaomi.sh" />
+	<linkfile src="buildxiaomi_kernel.sh" dest="buildxiaomi_kernel.sh" />
+	<linkfile src="sync.sh" dest="sync.sh" />
+	<linkfile src="buildmodule.sh" dest="buildmodule.sh" />
+	</project>
+
+<!-- XIAOMI MANIFEST -->
+  <remove-project name="platform/hardware/libhardware" />
+
+  <remove-project name="LineageOS/android_hardware_qcom_audio" />
+  <remove-project name="LineageOS/android_hardware_qcom_bt" />
+  <remove-project name="LineageOS/android_hardware_qcom_camera" />
+  <remove-project name="LineageOS/android_hardware_qcom_data_ipacfg-mgr" />
+  <remove-project name="LineageOS/android_hardware_qcom_display" />
+  <remove-project name="LineageOS/android_hardware_qcom_gps" />
+  <remove-project name="LineageOS/android_hardware_qcom_media" />
+
+  <project path="hardware/lineage/interfaces" name="LineageOS/android_hardware_lineage_interfaces" revision="lineage-17.0" />
+
+  <project path="hardware/qcom/power" name="LineageOS/android_hardware_qcom_power" groups="qcom,pdk-qcom" revision="lineage-16.0" />
+  <project path="hardware/ril-caf" name="LineageOS/android_hardware_ril" groups="qcom,pdk-qcom" revision="lineage-16.0-caf" />
+
+  <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="lineage-16.0" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,pdk-qcom" revision="lineage-16.0" />
+  <project path="vendor/qcom/opensource/dataservices" name="LineageOS/android_vendor_qcom_opensource_dataservices" groups="qcom,pdk-qcom" revision="lineage-16.0" />
+  <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="lineage-16.0" />
+
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="why" revision="lineage-17.0"/>
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="why" revision="lineage-17.0"/>
+  <project path="external/ant-wireless/antradio-library" name="LineageOS/android_external_ant-wireless_antradio-library" revision="lineage-16.0" />
+
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="why" revision="lineage-17.0" />
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="why" revision="lineage-17.0" />
+
+  <project path="external/json-c" name="LineageOS/android_external_json-c" groups="qcom,pdk-qcom" revision="lineage-16.0" />
+
+  <project path="hardware/libhardware" name="sagit-10-temp/android_hardware_libhardware" groups="pdk" revision="lineage-17.0" />
+
+  <project path="hardware/qcom/bt-caf" name="sagit-10-temp/android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-16.0-caf" />
+
+  <project path="hardware/qcom/audio-caf/msm8998" name="sagit-10-temp/android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="lineage-16.0-caf-8998" />
+  <project path="hardware/qcom/display-caf/msm8998" name="sagit-10-temp/android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="lineage-16.0-caf-8998" />
+  <project path="hardware/qcom/media-caf/msm8998" name="sagit-10-temp/android_hardware_qcom_media" groups="qcom,pdk-qcom" revision="lineage-16.0-caf-8998" />
+
+  <!-- kernel -->
+	<project name="android_kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" remote="sdm660" revision="kernel.lnx.4.4.r34-rel"/>
+	<project name="android_kernel_xiaomi_clover" path="kernel/xiaomi/clover" remote="sdm660" revision="kernel.lnx.4.4.r34-rel"/>
+
+  <!-- clover -->
+	<project name="android_device_xiaomi_wayne" path="device/xiaomi/wayne" remote="sdm660" revision="havoc"/>
+
+  <!-- jasmine-->
+	<project name="android_device_xiaomi_jasmine_Q" path="device/xiaomi/jasmine_sprout" remote="rcstar6696" revision="Q"/>
+
+  <!-- wayne-->
+	<project name="android_device_xiaomi_clover" path="device/xiaomi/clover" remote="sdm660" revision="havoc"/>
+
+  <!-- Common-->
+	<project name="android_device_xiaomi_sdm660-common_Q" path="device/xiaomi/sdm660-common" remote="rcstar6696" revision="Q"/>
+
+  <!-- vendor -->
+	<project name="android_vendor_xiaomi_clover" path="vendor/xiaomi/clover" remote="sdm660" revision="master" />
+	<project name="android_vendor_xiaomi_wayne_Q" path="vendor/xiaomi/wayne" remote="rcstar6696" revision="Q" />
+  <project name="android_vendor_xiaomi_sdm660-common_Q" path="vendor/xiaomi/sdm660-common" remote="rcstar6696" revision="Q" />
+
+  <project name="android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="lineageos" revision="lineage-16.0" />
+</manifest>
