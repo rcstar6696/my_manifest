@@ -17,4 +17,5 @@ cd ../../vendor/lineage
 git fetch "https://github.com/LineageOS/android_vendor_lineage" refs/changes/88/255888/7 && git checkout FETCH_HEAD
 git fetch "https://github.com/LineageOS/android_vendor_lineage" refs/changes/67/255667/1 && git cherry-pick FETCH_HEAD
 git revert -S 214dfb940218d1989fd7e57ccbd1a7e21147ebe4
+git fetch "https://github.com/LineageOS/android_vendor_lineage" refs/changes/56/256456/2 && git cherry-pick FETCH_HEAD
 cd ../../
