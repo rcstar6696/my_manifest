@@ -64,16 +64,16 @@
 	<project name="android_kernel_xiaomi_sdm660" path="kernel/xiaomi/sdm660" remote="sdm660" revision="kernel.lnx.4.4.r34-rel"/>
 	<project name="android_kernel_xiaomi_clover" path="kernel/xiaomi/clover" remote="sdm660" revision="kernel.lnx.4.4.r34-rel"/>
 
-  <!-- clover -->
+  <!-- wayne -->
 	<project name="android_device_xiaomi_wayne" path="device/xiaomi/wayne" remote="sdm660" revision="havoc"/>
 
-  <!-- jasmine-->
+  <!-- jasmine -->
 	<project name="android_device_xiaomi_jasmine_Q" path="device/xiaomi/jasmine_sprout" remote="rcstar6696" revision="Q"/>
 
-  <!-- wayne-->
+  <!-- clover -->
 	<project name="android_device_xiaomi_clover" path="device/xiaomi/clover" remote="sdm660" revision="havoc"/>
 
-  <!-- Common-->
+  <!-- Common -->
 	<project name="android_device_xiaomi_sdm660-common_Q" path="device/xiaomi/sdm660-common" remote="rcstar6696" revision="Q"/>
 
   <!-- vendor -->
